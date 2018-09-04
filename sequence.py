@@ -5,9 +5,12 @@ n2 = 1
 n3 = 2
 nlok = n1 + n2 + n3
 for i in range(0, n):
-    print(n1, n2, n3, nlok)
-    n1 = n2
-    n2 = n3
-    n3 = nlok
-    nlok = n1 + n2 + n3
+    if i < 3:
+        print(n2 + i)
+    else:
+        n1 = n2
+        n2 = n3
+        n3 = nlok
+        nlok = n1 + n2 + n3
+        print(nlok)
 
